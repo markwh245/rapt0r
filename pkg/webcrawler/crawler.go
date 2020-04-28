@@ -20,7 +20,7 @@ func GetUrls(host string) (links []string, err error) {
 }
 
 func checkBadUrl(host string) bool {
-	badUrls := []string{"facebook.com", "instagram.com", "twitter.com", "google.com"}
+	badUrls := []string{"facebook.com", "instagram.com", "twitter.com", "linkedin.com"}
 
 	for _, badUrl := range badUrls {
 		check := strings.Contains(host, badUrl)
