@@ -61,7 +61,7 @@ func Check(sl []string, s string) bool {
 // in our collection.
 func resolv(sl *[]string, ml []string) {
 	for _, str := range ml {
-		if Check(*sl, str) == false {
+		if !Check(*sl, str) {
 			*sl = append(*sl, str)
 		}
 	}

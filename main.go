@@ -16,7 +16,6 @@ var (
 	port     = flag.Int("port", 80, "Define target port")
 	timeout  = flag.Int("timeout", 1, "Define timeout")
 	wordlist = flag.String("wordlist", " ", "Define path of wordlist")
-	threads  = flag.Int("threads", 1, "Define number of threads")
 
 	subdomain = flag.Bool("subdomain", false, "Search subdomains on host")
 	dir       = flag.Bool("dir", false, "Search directorys open on host")
@@ -42,14 +41,11 @@ func main() {
 
 	case *subdomain:
 		subdomains.SearchSubdomains(&params)
-		break
 
 	case *dir:
 		dirs.SearchDirectory(&params)
-		break
 
 	case *crawler:
 		webcrawler.Crawler(&params)
-		break
 	}
 }

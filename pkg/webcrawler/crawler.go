@@ -52,7 +52,7 @@ func checkLink(host string, str string) (string, bool) {
 func InsertLink(host string, link string) {
 	newLink, checkLink := checkLink(host, link)
 
-	if collectlinks.Check(newLinks, newLink) == false {
+	if !collectlinks.Check(newLinks, newLink) {
 		if checkLink {
 			fmt.Println(newLink)
 			newLinks = append(newLinks, newLink)
