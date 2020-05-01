@@ -26,8 +26,8 @@ $ make or go build main.go -o jowfuzz
 
 ```
 Web crawler
-Subdomain discovery by DNS
-Directory discovery
+Search subdomain
+Search Directory
 ```
 
 ## Examples
@@ -47,6 +47,18 @@ Directory discovery
 
 ```
 ./jowfuzz -host https://google.com -crawler -verbose
+```
+
+## Docker environment
+
+```
+docker build -t jowfuzz .
+```
+
+## Example
+
+```
+docker run -it jowfuzz -host clubedostrinta.com.br -wordlist databases/subdomains/subdomains.txt -subdomain
 ```
 
 ## Developer
