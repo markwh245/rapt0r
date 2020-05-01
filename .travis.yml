@@ -1,11 +1,14 @@
 language: go
 
+env:
+  - DOCKER_HUB_REPO: "dtr0x80/jowfuzz"
+
 services:
   - docker
 
 before_install:
-  - docker build --no-cache -t ${TRAVIS_REPO_SLUG}
+  - docker build --no-cache -t ${DOCKER_HUB_REPO}:latest .
 
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ${TRAVIS_REPO_SLUG}:latest
+  - docker push ${DOCKER_HUB_REPO}:latest
