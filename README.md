@@ -15,3 +15,44 @@
   </p>
 </p>
 <hr>
+
+## Build
+
+```
+$ make or go build main.go -o jowfuzz
+```
+
+## Features
+
+```
+Web crawler
+Subdomain discovery by DNS
+Directory discovery
+```
+
+## Examples
+
+### Search subdomains
+```
+./jowfuzz -host google.com -wordlist databases/subdomains/subdomains.txt -subdomain
+```
+
+### Search directory's
+
+```
+./jowfuzz -host google.com -wordlist databases/directorys/directorys.txt -dir
+```
+
+### Web crawler (WIP)
+
+```
+./jowfuzz -host https://google.com -crawler -verbose
+```
+
+## Developer
+
+```
+[+] Gabriel Dutra A.K.A Dtr0x80
+[+] dtr0x80@protonmail.com
+[+] twitter.com/dtr0x80
+```
