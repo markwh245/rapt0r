@@ -3,7 +3,7 @@
   <p align="center">Jowfuzz is a web recognition tool.</p>
 
   <p align="center">
-    <a href="https://twitter.com/dtr0x80x">
+    <a href="https://twitter.com/dtr0x80">
       <img src="https://img.shields.io/badge/twitter-@dtr0x80-blue.svg">
     </a>
     <a href="https://travis-ci.org/dtr0x80/jowfuzz">
@@ -16,28 +16,28 @@
 </p>
 <hr>
 
+<p>
+Jowfuzz is a web application fuzzer. It is possible to analyze subdomains, directories and web crawler on targets.
+</p>
+
+![gif](https://i.imgur.com/kacluJH.gif)
+
 ## Build
 
 ```
 $ make or go build main.go -o jowfuzz
 ```
 
-## Features
-
-```
-Web crawler
-Search subdomain
-Search Directory
-```
+<hr>
 
 ## Examples
 
-### Search subdomains
+### Searching subdomains
 ```
 ./jowfuzz -host google.com -wordlist databases/subdomains/subdomains.txt -subdomain
 ```
 
-### Search directory's
+### Searching directories
 
 ```
 ./jowfuzz -host google.com -wordlist databases/directorys/directorys.txt -dir
@@ -48,6 +48,8 @@ Search Directory
 ```
 ./jowfuzz -host https://google.com -crawler -verbose
 ```
+
+<hr>
 
 ## Docker environment
 
