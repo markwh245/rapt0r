@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gmdutra/jowfuzz/pkg/parameters"
-	"github.com/gmdutra/jowfuzz/pkg/dns"
+	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/dns"
 )
 
 func Init(p *parameters.HostParameters) {

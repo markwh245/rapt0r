@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 
-	"github.com/gmdutra/jowfuzz/pkg/banner"
-	"github.com/gmdutra/jowfuzz/pkg/dirs"
-	"github.com/gmdutra/jowfuzz/pkg/initialize"
-	"github.com/gmdutra/jowfuzz/pkg/parameters"
-	"github.com/gmdutra/jowfuzz/pkg/subdomains"
-	"github.com/gmdutra/jowfuzz/pkg/webcrawler"
+	"github.com/dtr0x80/jowfuzz/pkg/banner"
+	"github.com/dtr0x80/jowfuzz/pkg/dirs"
+	"github.com/dtr0x80/jowfuzz/pkg/initialize"
+	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/subdomains"
+	"github.com/dtr0x80/jowfuzz/pkg/webcrawler"
 )
 
 var (
@@ -52,5 +52,4 @@ func main() {
 		webcrawler.Crawler(&params)
 		break
 	}
-
 }

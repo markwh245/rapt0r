@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/gmdutra/jowfuzz/pkg/files"
-	"github.com/gmdutra/jowfuzz/pkg/dns"
-	"github.com/gmdutra/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/files"
+	"github.com/dtr0x80/jowfuzz/pkg/dns"
+	"github.com/dtr0x80/jowfuzz/pkg/parameters"
 )
 
 func RunSearchdomains(domain string, verbose bool, wg *sync.WaitGroup){

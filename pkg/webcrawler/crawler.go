@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gmdutra/jowfuzz/pkg/collectlinks"
-	"github.com/gmdutra/jowfuzz/pkg/parameters"
-	"github.com/gmdutra/jowfuzz/pkg/requests"
+	"github.com/dtr0x80/jowfuzz/pkg/collectlinks"
+	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/requests"
 )
 
 var newLinks []string
