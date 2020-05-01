@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 
-	"github.com/gmdutra/jowfuzz/pkg/banner"
-	"github.com/gmdutra/jowfuzz/pkg/dirs"
-	"github.com/gmdutra/jowfuzz/pkg/initialize"
-	"github.com/gmdutra/jowfuzz/pkg/parameters"
-	"github.com/gmdutra/jowfuzz/pkg/subdomains"
-	"github.com/gmdutra/jowfuzz/pkg/webcrawler"
+	"github.com/dtr0x80/jowfuzz/pkg/banner"
+	"github.com/dtr0x80/jowfuzz/pkg/dirs"
+	"github.com/dtr0x80/jowfuzz/pkg/initialize"
+	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/subdomains"
+	"github.com/dtr0x80/jowfuzz/pkg/webcrawler"
 )
 
 var (
@@ -16,7 +16,6 @@ var (
 	port     = flag.Int("port", 80, "Define target port")
 	timeout  = flag.Int("timeout", 1, "Define timeout")
 	wordlist = flag.String("wordlist", " ", "Define path of wordlist")
-	threads  = flag.Int("threads", 1, "Define number of threads")
 
 	subdomain = flag.Bool("subdomain", false, "Search subdomains on host")
 	dir       = flag.Bool("dir", false, "Search directorys open on host")
@@ -42,15 +41,11 @@ func main() {
 
 	case *subdomain:
 		subdomains.SearchSubdomains(&params)
-		break
 
 	case *dir:
 		dirs.SearchDirectory(&params)
-		break
 
 	case *crawler:
 		webcrawler.Crawler(&params)
-		break
 	}
-
 }

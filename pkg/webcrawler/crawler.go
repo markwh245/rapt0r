@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gmdutra/jowfuzz/pkg/collectlinks"
-	"github.com/gmdutra/jowfuzz/pkg/parameters"
-	"github.com/gmdutra/jowfuzz/pkg/requests"
+	"github.com/dtr0x80/jowfuzz/pkg/collectlinks"
+	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/requests"
 )
 
 var newLinks []string
@@ -20,7 +20,7 @@ func GetUrls(host string) (links []string, err error) {
 }
 
 func checkBadUrl(host string) bool {
-	badUrls := []string{"https://www.facebook.com", "instagram.com", "twitter.com"}
+	badUrls := []string{"facebook.com", "instagram.com", "twitter.com", "linkedin.com"}
 
 	for _, badUrl := range badUrls {
 		check := strings.Contains(host, badUrl)
@@ -34,24 +34,25 @@ func checkBadUrl(host string) bool {
 }
 
 func checkLink(host string, str string) (string, bool) {
-
 	checkUrl, _ := regexp.MatchString("http.*://", str)
 
 	if checkUrl {
-		badUrl := checkBadUrl(host)
-		if badUrl == true {
+		badUrl := checkBadUrl(str)
+
+		if badUrl {
 			return "", false
+		} else {
+			return str, true
 		}
 	}
 
-	//eturn host + "/" + str, true
-	return str, true
+	return host + "/" + str, true
 }
 
 func InsertLink(host string, link string) {
 	newLink, checkLink := checkLink(host, link)
 
-	if collectlinks.Check(newLinks, newLink) == false {
+	if !collectlinks.Check(newLinks, newLink) {
 		if checkLink {
 			fmt.Println(newLink)
 			newLinks = append(newLinks, newLink)
@@ -85,5 +86,4 @@ func Crawler(parameters *parameters.HostParameters) {
 	for _, link := range links {
 		fmt.Println(link)
 	}
-
 }

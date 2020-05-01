@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gmdutra/jowfuzz/pkg/requests"
+	"github.com/dtr0x80/jowfuzz/pkg/requests"
 )
 
 func CheckSqlInjection(host string) bool {

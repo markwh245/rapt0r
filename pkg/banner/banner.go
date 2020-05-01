@@ -15,8 +15,8 @@ func Banner(){
  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝     ╚══════╝╚═╝  ╚═══╝
 
 Author: Gabriel "Dtrzx" Dutra
-GitHub: https://github.com/gmdutra
-Blog:	https://gmdutra.github.io
+GitHub: https://github.com/dtr0x80
+Blog:	https://dtr0x80.github.io
 ----------------------------------------------------------------------------
 	`)
 
