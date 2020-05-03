@@ -20,7 +20,7 @@
 Rapt0r is a web application fuzzer. It is possible to analyze subdomains, directories and web crawler on targets. Rapt0r uses a user agent randomization mode.
 </p>
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/326342)
+[![asciicast](https://asciinema.org/a/326342.png)](https://asciinema.org/a/326342)
 
 ## Build
 
