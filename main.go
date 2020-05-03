@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 
-	"github.com/dtr0x80/jowfuzz/pkg/banner"
-	"github.com/dtr0x80/jowfuzz/pkg/dirs"
-	"github.com/dtr0x80/jowfuzz/pkg/initialize"
-	"github.com/dtr0x80/jowfuzz/pkg/parameters"
-	"github.com/dtr0x80/jowfuzz/pkg/subdomains"
-	"github.com/dtr0x80/jowfuzz/pkg/webcrawler"
+	"github.com/dtr0x80/rapt0r/pkg/banner"
+	"github.com/dtr0x80/rapt0r/pkg/dirs"
+	"github.com/dtr0x80/rapt0r/pkg/initialize"
+	"github.com/dtr0x80/rapt0r/pkg/parameters"
+	"github.com/dtr0x80/rapt0r/pkg/subdomains"
+	"github.com/dtr0x80/rapt0r/pkg/webcrawler"
 )
 
 var (

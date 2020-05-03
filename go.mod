@@ -1,4 +1,4 @@
-module github.com/dtr0x80/jowfuzz
+module github.com/dtr0x80/rapt0r
 
 go 1.14
 

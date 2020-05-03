@@ -1,6 +1,6 @@
 build:
-	go build -o jowfuzz main.go
+	go build -o rapt0r main.go
 
 clean:
-	rm -f jowfuzz
+	rm -f rapt0r
 		

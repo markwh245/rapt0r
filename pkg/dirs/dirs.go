@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/dtr0x80/jowfuzz/pkg/files"
-	"github.com/dtr0x80/jowfuzz/pkg/parameters"
-	"github.com/dtr0x80/jowfuzz/pkg/requests"
+	"github.com/dtr0x80/rapt0r/pkg/files"
+	"github.com/dtr0x80/rapt0r/pkg/parameters"
+	"github.com/dtr0x80/rapt0r/pkg/requests"
 )
 
 func RunSearchDirectory(domain string, verbose bool, wg *sync.WaitGroup) {

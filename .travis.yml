@@ -1,7 +1,7 @@
 language: go
 
 env:
-  - DOCKER_HUB_REPO: "dtr0x80/jowfuzz"
+  - DOCKER_HUB_REPO: "dtr0x80/rapt0r"
 
 services:
   - docker

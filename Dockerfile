@@ -16,4 +16,4 @@ RUN go mod download
 RUN make
 
 # Command to run the executable
-ENTRYPOINT ["./jowfuzz"]
+ENTRYPOINT ["./rapt0r"]

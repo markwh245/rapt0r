@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/dtr0x80/jowfuzz/pkg/random"
+	"github.com/dtr0x80/rapt0r/pkg/random"
 )
 
 func Get(host string) (r *http.Response, err error) {

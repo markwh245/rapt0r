@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/rapt0r/pkg/parameters"
 )
 
 func GetHeader(parameters *parameters.HostParameters) http.Header {

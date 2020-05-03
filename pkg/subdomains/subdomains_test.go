@@ -2,7 +2,7 @@ package subdomains
 
 import (
 	"testing"
-	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/rapt0r/pkg/parameters"
 
 )
 
