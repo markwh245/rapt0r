@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/dtr0x80/jowfuzz/pkg/requests"
 	"github.com/dtr0x80/jowfuzz/pkg/files"
 	"github.com/dtr0x80/jowfuzz/pkg/parameters"
+	"github.com/dtr0x80/jowfuzz/pkg/requests"
 )
 
 func RunSearchDirectory(domain string, verbose bool, wg *sync.WaitGroup) {
@@ -21,14 +21,14 @@ func RunSearchDirectory(domain string, verbose bool, wg *sync.WaitGroup) {
 	}
 }
 
-func SearchDirectory(parameters *parameters.HostParameters){
+func SearchDirectory(parameters *parameters.HostParameters) {
 	var domain string
 	var wg sync.WaitGroup
 	verbose := parameters.Verbose
 
 	checkHttpsPrefix, _ := regexp.MatchString("http.*://", parameters.Host)
 
- 	if ! checkHttpsPrefix {
+	if !checkHttpsPrefix {
 		domain = "https://" + parameters.Host
 	}
 
