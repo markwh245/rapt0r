@@ -1,6 +1,6 @@
 <p align="center">
   <h3 align="center">rapt0r</h3>
-  <p align="center">Rapt0r is a web recognition tool.</p>
+  <p align="center">Rapt0r is a web application fuzzer.</p>
 
   <p align="center">
     <a href="https://twitter.com/dtr0x80">
@@ -60,7 +60,7 @@ docker build -t rapt0r .
 ## Example
 
 ```
-docker run -it rapt0r -host clubedostrinta.com.br -wordlist databases/subdomains/subdomains.txt -subdomain
+docker run -it rapt0r -host google.com -wordlist databases/subdomains/subdomains.txt -subdomain
 ```
 
 ## Developer
