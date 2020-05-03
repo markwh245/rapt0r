@@ -17,7 +17,7 @@
 <hr>
 
 <p>
-Jowfuzz is a web application fuzzer. It is possible to analyze subdomains, directories and web crawler on targets.
+Rapt0r is a web application fuzzer. It is possible to analyze subdomains, directories and web crawler on targets.
 </p>
 
 ![gif](https://i.imgur.com/kacluJH.gif)
