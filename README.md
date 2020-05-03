@@ -1,6 +1,6 @@
 <p align="center">
   <h3 align="center">rapt0r</h3>
-  <p align="center">Jowfuzz is a web recognition tool.</p>
+  <p align="center">Rapt0r is a web recognition tool.</p>
 
   <p align="center">
     <a href="https://twitter.com/dtr0x80">
